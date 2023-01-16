@@ -1,5 +1,4 @@
-"use client"
-import Link from "next/link";
+"use client";                     //Esto permite añadir interactividad a la página
 import React, { FC } from "react";
 
 const scrollTo = (top: number) => {
@@ -9,18 +8,8 @@ const scrollTo = (top: number) => {
 const Home: FC = () => {
   return (
     <>
-      <nav>
-        <div>
-          <Link href={"/"}>HOME</Link>
-        </div>
-        <div onClick={() => scrollTo(50)}>PROJECTS</div>
-        <div>
-          <Link href={"/about"}>ABOUT ME</Link>
-        </div>
-      </nav>
       <div>ESTE SERÁ MI DIV PRINCIPAL</div>
       <button onClick={() => scrollTo(0)}>SUBIR</button>
-      <footer>ESTE SERÁ MI FOOTER</footer>
     </>
   );
 };
