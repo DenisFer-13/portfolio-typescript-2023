@@ -1,6 +1,6 @@
 import { LinksType } from "@/utils/interfaces";
 import Link from "next/link";
-import React from "react";
+import style from "./footer.module.css";
 
 const Footer = () => {
   const externalLInks: LinksType[] = [
@@ -16,8 +16,8 @@ const Footer = () => {
 
   return (
     <>
-      <footer>
-        <ul>
+      <footer className={style.footer}>
+        <ul className={style.ul}>
           {externalLInks.map(({ label, route }) => (
             <li key={route}>
               <Link href={route} target={"_blank"}>

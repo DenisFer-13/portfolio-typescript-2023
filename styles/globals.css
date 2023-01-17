@@ -113,4 +113,5 @@ li {
 }
 li:hover {
   background-color: red;
+  text-decoration: underline;
 }

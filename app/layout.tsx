@@ -1,7 +1,7 @@
 "use client";
 import "../styles/globals.css";
-import Footer from "./about/components/footer";
-import Navigation from "./about/components/navigation";
+import Footer from "../components/footer";
+import Navigation from "../components/navigation";
 
 export default function RootLayout({
   children,

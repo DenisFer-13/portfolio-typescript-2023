@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import { LinksType } from "@/utils/interfaces";
-import * as style from "../components/navigation.module.css";
+import * as style from "./navigation.module.css";
 
 const Navigation: FC = () => {
   const internalLinks: LinksType[] = [
