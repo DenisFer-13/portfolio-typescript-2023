@@ -1,4 +1,5 @@
 "use client"; //Esto permite añadir interactividad a la página
+import Projects from "@/components/projects";
 import Technologies from "@/components/technologies";
 import React, { FC } from "react";
 import style from "./page.module.css";
@@ -22,6 +23,7 @@ const Home: FC = () => {
         </p>
       </div>
       <Technologies />
+      <Projects />
     </>
   );
 };
