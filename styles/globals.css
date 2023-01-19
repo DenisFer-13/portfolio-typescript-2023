@@ -81,9 +81,18 @@
 
 html,
 body {
-  padding: 100px;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #150050;
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 body {
