@@ -1,4 +1,5 @@
 "use client"; //Esto permite añadir interactividad a la página
+import Technologies from "@/components/technologies";
 import React, { FC } from "react";
 import style from "./page.module.css";
 
@@ -19,8 +20,8 @@ const Home: FC = () => {
           programming and I feel like I'm playing. I have a lot to offer, if you
           are interested, contact me by Github or LunkedIn. Regards.
         </p>
-        <button onClick={() => scrollTo(0)}>SUBIR</button>
       </div>
+      <Technologies />
     </>
   );
 };
