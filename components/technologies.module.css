@@ -1,0 +1,112 @@
+.tech {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vw 1vw 0 1vw;
+}
+.techD {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+.ulTech {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.liTech {
+  padding: 0 6px 0 6px;
+}
+.divH {
+  background-color: #8e05c2;
+  width: 150px;
+  height: 70px;
+  margin: 0 5px 0 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divH .div2 {
+  position: absolute;
+  transition: 0.4s;
+  width: 100px;
+  height: 50px;
+}
+.divH:hover .div2 {
+  opacity: 0;
+}
+.divH .div1 {
+  opacity: 0;
+  transition: 0.7s;
+}
+.divH:hover .div1 {
+  opacity: 100;
+}
+@media screen and (max-width: 1300px) {
+  .techD {
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .divH {
+    width: 100%;
+    margin: 0 1% 1% 1%;
+    flex: 0 1 calc(15% - 4px);
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100%;
+  }
+  .tech {
+    width: 100%;
+    display: block;
+  }
+  .h1 {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  .h2 {
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  .h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .p {
+    padding-top: 4px;
+    font-size: 13px;
+  }
+  .techD {
+    width: 100%;
+    display: block;
+  }
+  .divH {
+    width: 90%;
+    margin: 0 5% 2% 5%;
+  }
+  .containerProjects {
+    margin: auto;
+  }
+  .project {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h4 {
+    font-size: 14px;
+  }
+  .projectImg {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 45%;
+  }
+}
