@@ -10,8 +10,39 @@ import { BsFillArrowUpCircleFill } from "react-icons/bs";
 const Projects = () => {
   return (
     <>
+      <article>
+        <h2>MY WORKING</h2>
+        <div className={style.project}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Image className={style.img} src={img_two} alt="img" />
+            <Image className={style.img} src={img_three} alt="img" />
+            <div style={{ textAlign: "center", padding: "10px" }}>
+              <div>
+                I worked as a backend developer, since february 2022, I made
+                different projects around Latinamerica, these projects are
+                created with NestJS with differents technologies for databases,
+                like MySQL, ServerSQL, MongoDB, etc.
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  marginTop: "8px",
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </article>
       <article className={style.containerProjects}>
-        <h2>MY PROJECTS</h2>
+        <h2>MY ACADEMIC PROJECTS</h2>
         <div className={style.project}>
           <h4>16BIT GAMESTORE</h4>
           <div className={style.projectImg}>
@@ -26,7 +57,7 @@ const Projects = () => {
               <Image className={style.img} src={img_three} alt="img" />
             </div>
             <div style={{ textAlign: "center", padding: "10px" }}>
-              <div style={{ height: "70%" }}>
+              <div>
                 This is a groupal project maded for the Henry's bootcamp, in
                 this project we worked in front-end with: TypeScript, React,
                 Redux, and in the back-end we worked with JavaScript, Express,

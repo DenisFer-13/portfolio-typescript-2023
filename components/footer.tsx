@@ -17,6 +17,7 @@ const Footer = () => {
   return (
     <>
       <footer className={style.footer}>
+        <div>Denis Ferreyra | Full Stack Developer</div>
         <ul className={style.ul}>
           {externalLInks.map(({ label, route }) => (
             <li key={route}>
