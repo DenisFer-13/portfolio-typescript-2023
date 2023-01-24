@@ -19,7 +19,7 @@ const Technologies = () => {
   return (
     <>
       <section className={style.tech}>
-        <h3 style={{ padding: "30px" }}>TECHNOLOGIES</h3>
+        <h3 style={{ padding: "30px" }}>TECNOLOGÍAS</h3>
         <div className={style.techD}>
           <div className={style.divH}>
             <div className={style.div1}>TYPESCRIPT </div>

@@ -119,11 +119,13 @@ a {
 li {
   padding-left: 10px;
   padding-right: 10px;
+  transition: 0.4s;
 }
+
 li:hover {
-  background-color: red;
-  text-decoration: underline;
+  background-color: blueviolet;
 }
+
 button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: white;
