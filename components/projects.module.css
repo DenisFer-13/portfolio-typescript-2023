@@ -28,8 +28,10 @@
 }
 
 .img {
+  padding: 20px;
+  object-fit: contain;
   width: 28vw;
-  margin: 0 1vw 2vw 1vw;
+  height: 20vw;
 }
 
 .buttonSide {
