@@ -3,6 +3,8 @@ import img_pi_one from "../img/1.png";
 import img_pi_two from "../img/2.png";
 import img_two from "../img/2.jpg";
 import img_three from "../img/3.jpg";
+import econocomImage from "../img/Econocom_Logo.jpg";
+import digitalHouseImage from "../img/DigitalHouse_Logo.jpg";
 import style from "../components/projects.module.css";
 import Image from "next/image";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
@@ -10,8 +12,14 @@ import { BsFillArrowUpCircleFill } from "react-icons/bs";
 const Projects = () => {
   return (
     <>
-      <article>
-        <h2>MY WORKING</h2>
+      <article
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h2 style={{ textAlign: "center" }}>EXPERIENCIA LABORAL</h2>
         <div className={style.project}>
           <div
             style={{
@@ -20,14 +28,40 @@ const Projects = () => {
               justifyContent: "space-evenly",
             }}
           >
-            <Image className={style.img} src={img_two} alt="img" />
-            <Image className={style.img} src={img_three} alt="img" />
+            <Image className={style.img} src={econocomImage} alt="img" />
             <div style={{ textAlign: "center", padding: "10px" }}>
               <div>
-                I worked as a backend developer, since february 2022, I made
-                different projects around Latinamerica, these projects are
-                created with NestJS with differents technologies for databases,
-                like MySQL, ServerSQL, MongoDB, etc.
+                Trabajo, desde febrero de 2022, en Econocom SP, empresa donde he
+                realizado mas de 6 projectos de diferentes clientes y temáticas,
+                desde proyectos de fidelidad, ecommerce, marketplace y hasta
+                telefonía.
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  marginTop: "8px",
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div className={style.project}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Image className={style.img} src={digitalHouseImage} alt="img" />
+            <div style={{ textAlign: "center", padding: "10px" }}>
+              <div>
+                Trabajé como docente auxiliar para el It Bootcamp de
+                MercadoLibre (edición frontend), donde me encargué del dictado
+                de algunas clases, resolver temas administrativos, corregir
+                sprints, etc. Se trabajó con React, HTML y CSS.
               </div>
               <div
                 style={{
@@ -42,7 +76,7 @@ const Projects = () => {
         </div>
       </article>
       <article className={style.containerProjects}>
-        <h2>MY ACADEMIC PROJECTS</h2>
+        <h2>MIS PROYECTOS ACADÉMICOS</h2>
         <div className={style.project}>
           <h4>16BIT GAMESTORE</h4>
           <div className={style.projectImg}>
@@ -58,10 +92,10 @@ const Projects = () => {
             </div>
             <div style={{ textAlign: "center", padding: "10px" }}>
               <div>
-                This is a groupal project maded for the Henry's bootcamp, in
-                this project we worked in front-end with: TypeScript, React,
-                Redux, and in the back-end we worked with JavaScript, Express,
-                NodeJS, PostgreSQL and Sequelize.
+                Este es un proyecto grupal realizado en octubre 2021 para el
+                bootcamp de Soy Henry, en este proyecto trabajamos en frontend
+                con: TypeScript, React, Redux, y en el backend con JavaScript,
+                Express, NodeJS, PostgreSQL y Sequelize.
               </div>
               <div
                 style={{
@@ -72,20 +106,20 @@ const Projects = () => {
                 }}
               >
                 <a href="https://16-bit-gamestore.vercel.app/" target="_blank">
-                  <button>VIEW PROJECT</button>
+                  <button>VER PROYECTO</button>
                 </a>
                 <a
                   href="https://github.com/DenisOrlando/16Bit-GameStore"
                   target="_blank"
                 >
-                  <button>GITHUB REPO</button>
+                  <button>REPOSITORIO DE GITHUB</button>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div className={style.project}>
-          <h4>INDIVIDUAL PROJECT: VIDEOGAMES</h4>
+          <h4>PROYECTO INDIVIDUAL: VIDEOGAMES</h4>
           <div className={style.projectImg}>
             <div style={{ display: "flex", flexDirection: "row" }}>
               <Image className={style.img} src={img_pi_one} alt="img" />
@@ -93,10 +127,9 @@ const Projects = () => {
             </div>
             <div style={{ textAlign: "center", padding: "10px" }}>
               <div style={{ height: "70%" }}>
-                This is a individual project maded for the Henry's bootcamp, in
-                this project we worked in front-end with: JavaScript, React,
-                Redux, and in the back-end we worked with JavaScript, Express,
-                NodeJS, PostgreSQL and Sequelize.
+                Este es un proyecto individual hecho para el bootcamp de Soy
+                Henry, en el trabajé con Javascript, React, Redux, HTML, CSS,
+                Express, PostgreSQL, Sequelize.
               </div>
               <div
                 style={{
@@ -110,7 +143,7 @@ const Projects = () => {
                   href="https://github.com/DenisOrlando/PI-Videogames-v2"
                   target="_blank"
                 >
-                  <button>GITHUB REPO</button>
+                  <button>REPOSITORIO DE GITHUB</button>
                 </a>
               </div>
             </div>
