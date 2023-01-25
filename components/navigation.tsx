@@ -27,14 +27,22 @@ const Navigation: FC = () => {
     {
       label: "HOME",
       route: "/",
+      top: 0,
     },
     {
-      label: "PROJECTS",
-      route: "/projects",
+      label: "EXPERIENCIA LABORAL",
+      route: "/",
+      top: 720,
     },
     {
-      label: "CONTACT",
+      label: "PROYECTOS ACADÉMICOS",
+      route: "/",
+      top: 1700,
+    },
+    {
+      label: "CONTACTAME",
       route: "/about",
+      top: 0,
     },
   ];
 
@@ -42,8 +50,11 @@ const Navigation: FC = () => {
     <header className={y > 0 ? style.headerSticky : style.header}>
       <nav>
         <ul className={style.ul}>
-          {internalLinks.map(({ label, route }) => (
-            <li key={route}>
+          {internalLinks.map(({ label, route, top }) => (
+            <li
+              key={route}
+              onClick={() => window.scrollTo({ top: top, behavior: "smooth" })}
+            >
               <Link href={route}>{label}</Link>
             </li>
           ))}
