@@ -12,3 +12,8 @@
   list-style: none;
   color: black;
 }
+
+.divFooter {
+  display: flex;
+  width: 400px;
+}
